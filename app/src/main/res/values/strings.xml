@@ -13,4 +13,6 @@
     <string name="drawer_close">close drawer</string>
     <string name="bod">Board Of Directors</string>
     <string name="oppurtunities">Career Oppurtunities</string>
+    <string name="customerservices">Customer Services</string>
+    <string name="messagepresident">President Message</string>
 </resources>

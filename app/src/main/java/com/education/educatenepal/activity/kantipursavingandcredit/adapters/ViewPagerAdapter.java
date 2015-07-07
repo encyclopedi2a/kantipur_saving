@@ -2,16 +2,18 @@ package com.education.educatenepal.activity.kantipursavingandcredit.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.education.educatenepal.activity.kantipursavingandcredit.fragments.MessageFragment;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.OppurtunitiesFragment;
+import com.education.educatenepal.activity.kantipursavingandcredit.fragments.ServicesFragment;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.bodfragment;
 
 /**
  * Created by gokarna on 7/7/15.
  */
-public class ViewPagerAdapter extends FragmentPagerAdapter {
-    String[] viewPagerPages = {"Directors", "Oppurtunities", "Supports", "Services", "Links"};
+public class ViewPagerAdapter extends FragmentStatePagerAdapter {
+    String[] viewPagerPages = {"Directors", "Oppurtunities", "Services", "Messages"};
 
     public ViewPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -28,7 +30,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 fragment = new OppurtunitiesFragment();
                 break;
             case 2:
-                fragment=new OppurtunitiesFragment();
+                fragment=new ServicesFragment();
+                break;
+            case 3:
+                fragment=new MessageFragment();
                 break;
         }
         return fragment;
