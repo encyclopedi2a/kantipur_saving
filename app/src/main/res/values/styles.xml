@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/secondaryColor</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#EAFF00</item>
+    </style>
+    <style name="MySlidingTabStyle" parent="Base.Widget.AppCompat.ActionBar.TabBar">
+        <item name="android:textColor">@drawable/tab_text</item>
+    </style>
+</resources>
