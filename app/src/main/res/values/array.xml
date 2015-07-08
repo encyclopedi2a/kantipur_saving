@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aboutarray">
+        <item>Directors</item>
+        <item>Oppurtunities</item>
+        <item>Services</item>
+        <item>Messages</item>
+    </string-array>
+    /////////////////////////////////////
+    <string-array name="bankingarray">
+        <item>Personal Banking</item>
+        <item>Business Banking</item>
+    </string-array>
+    <string-array name="personalbankingarray">
+        <item>Checking</item>
+        <item>Service</item>
+        <item>Loans</item>
+    </string-array>
+</resources>

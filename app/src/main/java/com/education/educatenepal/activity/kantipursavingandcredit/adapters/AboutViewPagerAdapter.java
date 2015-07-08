@@ -12,11 +12,12 @@ import com.education.educatenepal.activity.kantipursavingandcredit.fragments.bod
 /**
  * Created by gokarna on 7/7/15.
  */
-public class ViewPagerAdapter extends FragmentStatePagerAdapter {
-    String[] viewPagerPages = {"Directors", "Oppurtunities", "Services", "Messages"};
+public class AboutViewPagerAdapter extends FragmentStatePagerAdapter {
+    String[] viewPagerPages;
 
-    public ViewPagerAdapter(FragmentManager fm) {
+    public AboutViewPagerAdapter(FragmentManager fm, String[] viewPagerPages) {
         super(fm);
+        this.viewPagerPages=viewPagerPages;
     }
 
     @Override
@@ -30,10 +31,10 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
                 fragment = new OppurtunitiesFragment();
                 break;
             case 2:
-                fragment=new ServicesFragment();
+                fragment = new ServicesFragment();
                 break;
             case 3:
-                fragment=new MessageFragment();
+                fragment = new MessageFragment();
                 break;
         }
         return fragment;

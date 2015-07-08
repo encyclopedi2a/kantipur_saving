@@ -2,4 +2,5 @@
 <resources>
     <color name="primaryColor">#00C02B</color>
     <color name="secondaryColor">#ffffff</color>
+    <color name="spinner_base_color">#44000000</color>
 </resources>

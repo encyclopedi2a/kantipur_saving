@@ -3,4 +3,7 @@
     <color name="selected">#ffffff</color>
     <color name="unselected">#dddddd</color>
     <color name="tabindicator">#EAFF00</color>
+    <color name="innerselected">#000000</color>
+    <color name="innerunselected">#000000</color>
+    <color name="innertabindicator">#00C02B</color>
 </resources>

@@ -10,4 +10,7 @@
     <style name="MySlidingTabStyle" parent="Base.Widget.AppCompat.ActionBar.TabBar">
         <item name="android:textColor">@drawable/tab_text</item>
     </style>
+    <style name="InnerSlidingTabStyle" parent="Base.Widget.AppCompat.ActionBar.TabBar">
+        <item name="android:textColor">@drawable/inner_tab_text</item>
+    </style>
 </resources>

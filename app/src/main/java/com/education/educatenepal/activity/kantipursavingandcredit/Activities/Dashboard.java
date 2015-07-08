@@ -20,6 +20,7 @@ import android.widget.ListView;
 import com.education.educatenepal.activity.kantipursavingandcredit.R;
 import com.education.educatenepal.activity.kantipursavingandcredit.adapters.DrawerListArrayAdapter;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.AboutFragment;
+import com.education.educatenepal.activity.kantipursavingandcredit.fragments.BankingFragment;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.HomeFragment;
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
@@ -110,15 +111,16 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             FragmentTransaction transaction = fragmentManager.beginTransaction();
             switch (position) {
                 case 0:
-                    Fragment homeFragment=new HomeFragment();
+                    Fragment homeFragment = new HomeFragment();
                     transaction.replace(R.id.content_frame, homeFragment).commit();
                     break;
                 case 1:
                     Fragment fragment = new AboutFragment();
                     transaction.replace(R.id.content_frame, fragment).commit();
                     break;
-                case 3:
-
+                case 2:
+                    Fragment bankingFragment = new BankingFragment();
+                    transaction.replace(R.id.content_frame, bankingFragment).commit();
                     break;
                 case 4:
 
@@ -130,20 +132,6 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
                     break;
                 case 7:
-
-                    break;
-                case 9:
-
-                    break;
-                case 10:
-
-                    break;
-
-                case 11:
-
-                    break;
-                case 12:
-
                     break;
             }
             mDrawerLayout.closeDrawer(Gravity.LEFT);

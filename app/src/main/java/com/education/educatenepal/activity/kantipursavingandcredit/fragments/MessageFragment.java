@@ -32,7 +32,7 @@ public class MessageFragment extends Fragment {
                 " to help you make choices. We are committed to improving this site, making " +
                 "it more useful, and bringing you new types of information whenever possible." +
                 " We welcome your suggestions and comments.<br><br>Thank you all<br> " +
-                "<b>C.B. Lama</b>" ;
+                "<b>C.B. Lama</b>";
         return content;
     }
 
