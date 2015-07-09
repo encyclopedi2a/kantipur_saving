@@ -1,20 +1,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.education.educatenepal.activity.kantipursavingandcredit.fragments.AboutFragment">
 
-    <com.sudeep23.lollipoptabs.fixedtab.FixedTabLayout
-        android:id="@+id/fixed_tab"
+    <ExpandableListView
+        android:id="@+id/expandableListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:elevation="5dp"
-        android:theme="@style/InnerSlidingTabStyle" />
+        android:scrollbars="none"
+        android:layout_height="match_parent"></ExpandableListView>
 
-    <com.education.educatenepal.activity.kantipursavingandcredit.classes.CustomInnnerViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </LinearLayout>

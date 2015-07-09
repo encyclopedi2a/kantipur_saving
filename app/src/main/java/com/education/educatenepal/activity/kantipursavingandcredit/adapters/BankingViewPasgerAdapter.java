@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.education.educatenepal.activity.kantipursavingandcredit.fragments.OppurtunitiesFragment;
+import com.education.educatenepal.activity.kantipursavingandcredit.fragments.BusinessBankingFragment;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.PersonalBankingFragment;
 
 /**
@@ -26,7 +26,7 @@ public class BankingViewPasgerAdapter extends FragmentStatePagerAdapter {
                 fragment = new PersonalBankingFragment();
                 break;
             case 1:
-                fragment = new OppurtunitiesFragment();
+                fragment = new BusinessBankingFragment();
                 break;
         }
         return fragment;

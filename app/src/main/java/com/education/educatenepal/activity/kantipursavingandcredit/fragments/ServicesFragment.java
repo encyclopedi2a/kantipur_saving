@@ -1,6 +1,5 @@
 package com.education.educatenepal.activity.kantipursavingandcredit.fragments;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -10,9 +9,10 @@ import android.widget.TextView;
 
 import com.education.educatenepal.activity.kantipursavingandcredit.R;
 
-
-public class ServicesFragment extends Fragment {
-
+/**
+ * Created by gokarna on 7/9/15.
+ */
+public class ServicesFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

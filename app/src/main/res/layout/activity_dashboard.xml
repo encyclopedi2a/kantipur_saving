@@ -20,7 +20,7 @@
         <!-- The navigation drawer -->
         <LinearLayout
             android:id="@+id/linearlayout"
-            android:layout_width="220dp"
+            android:layout_width="260dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="#CC00C02B"
@@ -36,8 +36,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:choiceMode="singleChoice"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0dp"
+                android:layout_margin="10dp"
+                android:divider="#ffffff"
+                android:dividerHeight="2dp"
                 android:scrollbars="none" />
         </LinearLayout>
     </android.support.v4.widget.DrawerLayout>

@@ -45,7 +45,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
         String titles[] = {"Home", "About Us", "Banking", "Investment Services", "Mortgage Centre", "Portfolio", "Contact Us"};
-        int[] image = {R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher};
+        int[] image = {R.drawable.home, R.drawable.aboutus, R.drawable.banking, R.drawable.investment, R.drawable.mortagecentre, R.drawable.portfolio, R.drawable.contactus};
         mDrawerList.setAdapter(new DrawerListArrayAdapter(getApplicationContext(), titles, image));
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();

@@ -16,4 +16,9 @@
         <item>Service</item>
         <item>Loans</item>
     </string-array>
+    <string-array name="businessbankingarray">
+        <item>Accounts</item>
+        <item>Loans</item>
+        <item>Services</item>
+    </string-array>
 </resources>
