@@ -5,10 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
-import android.widget.LinearLayout;
 
 import com.education.educatenepal.activity.kantipursavingandcredit.R;
-import com.education.educatenepal.activity.kantipursavingandcredit.adapters.ExpandableListAdapter;
+import com.education.educatenepal.activity.kantipursavingandcredit.adapters.PersonalBankingExpandableListAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,13 +17,11 @@ import java.util.List;
  * Created by gokarna on 7/9/15.
  */
 public class PersonalBankingFragment extends android.support.v4.app.Fragment {
-    ExpandableListAdapter listAdapter;
+    PersonalBankingExpandableListAdapter listAdapter;
     ExpandableListView expListView;
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
     View view;
-    int height;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,13 +33,37 @@ public class PersonalBankingFragment extends android.support.v4.app.Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        final LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.linearlayout);
         expListView = (ExpandableListView) view.findViewById(R.id.expandableListView);
+        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                switch (groupPosition) {
+                    case 0:
+                        expListView.collapseGroup(1);
+                        expListView.collapseGroup(2);
+
+                        break;
+                    case 1:
+                        expListView.collapseGroup(0);
+                        expListView.collapseGroup(2);
+                        expListView.setSelectionAfterHeaderView();
+                        break;
+                    case 2:
+                        expListView.collapseGroup(1);
+                        expListView.collapseGroup(0);
+                        expListView.setSelectionAfterHeaderView();
+                        break;
+                }
+                expListView.smoothScrollToPosition(0);
+            }
+        });
         // preparing list data
         prepareListData();
-        listAdapter = new ExpandableListAdapter(getActivity().getApplicationContext(), listDataHeader, listDataChild);
+        listAdapter = new PersonalBankingExpandableListAdapter(getActivity().getApplicationContext(), listDataHeader, listDataChild);
         // setting list adapter
         expListView.setAdapter(listAdapter);
+        //set default expanding group
+        expListView.expandGroup(0);
     }
 
     private void prepareListData() {

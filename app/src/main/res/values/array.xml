@@ -11,14 +11,29 @@
         <item>Personal Banking</item>
         <item>Business Banking</item>
     </string-array>
+    ///////////////////////////////////
     <string-array name="personalbankingarray">
         <item>Checking</item>
         <item>Service</item>
         <item>Loans</item>
     </string-array>
+    //////////////////////////////////////
     <string-array name="businessbankingarray">
         <item>Accounts</item>
         <item>Loans</item>
         <item>Services</item>
+        //////////////////////////////////////
+    </string-array>
+    <string-array name="investmentarray">
+        <item>Investment Article</item>
+        <item>Appointment</item>
+    </string-array>
+    /////////////////////////////////////////
+    <string-array name="mortgagearray">
+        <item>Mortgage in minutes</item>
+        <item>Mortgage products</item>
+        <item>Mortgage Specialist</item>
+        <item>Local Relators</item>
+        <item>Rates</item>
     </string-array>
 </resources>

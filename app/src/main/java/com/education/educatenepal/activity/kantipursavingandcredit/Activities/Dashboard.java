@@ -21,7 +21,10 @@ import com.education.educatenepal.activity.kantipursavingandcredit.R;
 import com.education.educatenepal.activity.kantipursavingandcredit.adapters.DrawerListArrayAdapter;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.AboutFragment;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.BankingFragment;
+import com.education.educatenepal.activity.kantipursavingandcredit.fragments.ContactUsFragment;
 import com.education.educatenepal.activity.kantipursavingandcredit.fragments.HomeFragment;
+import com.education.educatenepal.activity.kantipursavingandcredit.fragments.InvestmentFragment;
+import com.education.educatenepal.activity.kantipursavingandcredit.fragments.MortgageFragment;
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
     private DrawerLayout mDrawerLayout;
@@ -122,16 +125,20 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                     Fragment bankingFragment = new BankingFragment();
                     transaction.replace(R.id.content_frame, bankingFragment).commit();
                     break;
+                case 3:
+                    Fragment investmentFragment = new InvestmentFragment();
+                    transaction.replace(R.id.content_frame, investmentFragment).commit();
+                    break;
                 case 4:
-
+                    Fragment mortgageFragment=new MortgageFragment();
+                    transaction.replace(R.id.content_frame,mortgageFragment).commit();
                     break;
                 case 5:
-
+                    //this field is not available yer
                     break;
                 case 6:
-
-                    break;
-                case 7:
+                    Fragment contactus=new ContactUsFragment();
+                    transaction.replace(R.id.content_frame,contactus).commit();
                     break;
             }
             mDrawerLayout.closeDrawer(Gravity.LEFT);

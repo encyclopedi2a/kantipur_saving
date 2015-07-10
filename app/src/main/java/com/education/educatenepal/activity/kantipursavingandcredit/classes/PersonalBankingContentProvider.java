@@ -50,7 +50,7 @@ public class PersonalBankingContentProvider {
     public String personalLoans() {
         String content = "No matter what your borrowing needs, Kantipur Cooperative Bank can help " +
                 "find the loan that best suits your requirements, at a rate you can afford.<br><br> " +
-                "<b>Auto Loans</b><br><br>"+
+                "<b>Auto Loans</b><br><br>" +
                 "•Fixed-rate loans up to Rs 50,000 for new or used autos Up to 30% financing<br>" +
                 "•Vehicle must be registered in Katmandu valley only<br>" +
                 "•Interest rate is 0.5 % lower with automatic monthly payment from your Kantipur" +
@@ -92,6 +92,39 @@ public class PersonalBankingContentProvider {
                 "<b>Stock Loans</b><br> " +
                 "For more information on any of these products, please contact a Loan Specialist or " +
                 "email us.";
+        return content;
+    }
+
+    public String businessAccountsContent() {
+        String content = "Imagine a checking account that's designed to help your business run smoother." +
+                "We offer avariety of Checking Accounts to suit your needs including sole proprietors," +
+                " non-profits and legal professions.<br><br><b>New Business Checking</b><br> " +
+                "Kantipur Cooperative Bank is committed to helping you and your business achieve success." +
+                "Our Free Business Checking Account was designed for start-up businesses or those that have " +
+                "low monthly balances in checking and minimal transactions.<br><br>" +
+                "•Minimum to open account is Rs.500 0<br>" +
+                "•No minimum balance required<br> " +
+                "•First 150 checks presented for payment are free , .25 each thereafter.<br>" +
+                "•First basic order of 50 checks is free.<br>";
+        return content;
+    }
+
+    public String otherServicesContent() {
+        String content = "<b>Commercial Mortgages</b><br>" +
+                "Kantipur Cooperative Bank is the place to turn to for financing or refinancing" +
+                " commercial property. You can expect highly personalized service and quick response" +
+                " because at Kantipur Cooperative Bank these are a requirement, not a goal.<br><br> " +
+                "<b>Commercial Real Estate Financing</b><br> " +
+                "We offer a full range of commercial real estate services including permanent loans " +
+                "to purchase or refinance existing real estate.<br><br> " +
+                "Our Commercial Lending Specialists have years of Kantipur lending experience for " +
+                "multi-tenanted residential investment properties, office buildings, retail centers," +
+                " industrial buildings and more.<br><br> " +
+                "<b>Commercial Construction Loans</b><br> " +
+                "Construction loans are for the renovation or construction of commercial properties" +
+                " or the development of residential properties. Funds are deposited into the customer's" +
+                " Kantipur Cooperative Business Checking Account in stages. Once the project is complete," +
+                " the construction loan is usually converted into a commercial mortgage.";
         return content;
     }
 }

@@ -19,14 +19,14 @@ import java.util.List;
 /**
  * Created by gokarna on 7/9/15.
  */
-public class ExpandableListAdapter extends BaseExpandableListAdapter {
+public class PersonalBankingExpandableListAdapter extends BaseExpandableListAdapter {
     private Context _context;
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<String>> _listDataChild;
 
-    public ExpandableListAdapter(Context context, List<String> listDataHeader,
-                                 HashMap<String, List<String>> listChildData) {
+    public PersonalBankingExpandableListAdapter(Context context, List<String> listDataHeader,
+                                                HashMap<String, List<String>> listChildData) {
         this._context = context;
         this._listDataHeader = listDataHeader;
         this._listDataChild = listChildData;
